@@ -1,32 +1,44 @@
 = template_class
 
-* FIX (url)
+* http://github.com/bkerley/template_class/tree/master
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Produces template classes suitable for passing to form_for
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+template_class is flawless
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+  TemplateClass('Login', %w{username password id})
+	# => Login
+	l = Login.new
+	# => #<Login:0x18e4e90>
+	l.username = 'fo twenny'
+	# => "fo twenny"
+	l.id
+	# => nil
+	l.username
+	# => "fo twenny"
+	l.class.name
+	# => "Login"
+	
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+ruby
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+gem install bkerley-template_class
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIXME full name
+Copyright (c) 2009 Bryce Kerley
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
