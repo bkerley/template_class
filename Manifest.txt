@@ -1,11 +1,8 @@
 History.txt
 Manifest.txt
-PostInstall.txt
 README.rdoc
 Rakefile
 lib/template_class.rb
 script/console
-script/destroy
-script/generate
 test/test_helper.rb
 test/test_template_class.rb
