@@ -2,15 +2,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{template_class}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Bryce Kerley"]
   s.date = %q{2009-01-13}
   s.description = %q{Produces template classes suitable for passing to form_for}
   s.email = ["bkerley@brycekerley.net"]
-  s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc"]
-  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/template_class.rb", "script/console", "script/destroy", "script/generate", "test/test_helper.rb", "test/test_template_class.rb"]
+  s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.rdoc"]
+  s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "lib/template_class.rb", "script/console", "test/test_helper.rb", "test/test_template_class.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/bkerley/template_class/tree/master}
   s.rdoc_options = ["--main", "README.rdoc"]
