@@ -4,10 +4,9 @@ require File.dirname(__FILE__) + '/lib/template_class'
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
 $hoe = Hoe.new('template_class', TemplateClass::VERSION) do |p|
-  p.developer('FIXME full name', 'FIXME email')
+  p.developer('Bryce Kerley', 'bkerley@brycekerley.net')
   p.changes              = p.paragraphs_of("History.txt", 0..1).join("\n\n")
-  p.post_install_message = 'PostInstall.txt' # TODO remove if post-install message not required
-  p.rubyforge_name       = p.name # TODO this is default value
+  p.rubyforge_name       = p.name
   # p.extra_deps         = [
   #   ['activesupport','>= 2.0.2'],
   # ]
@@ -23,6 +22,3 @@ end
 
 require 'newgem/tasks' # load /tasks/*.rake
 Dir['tasks/**/*.rake'].each { |t| load t }
-
-# TODO - want other tests/tasks run by default? Add them to the list
-# task :default => [:spec, :features]
